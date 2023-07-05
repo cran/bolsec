@@ -1,0 +1,57 @@
+---
+title: "bolsec"
+author: "Created by: Alvaro I. Tapia"
+output:
+  rmarkdown::html_vignette:
+    fig_width: 8
+    fig_height: 6
+vignette: >
+  %\VignetteIndexEntry{bolsec}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+---
+knitr::include_graphics("inst/images/logo.png") {width=200px}\n
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+## Introduction 
+The bolsec package enable users by providing daily updated financial data from securities traded on the Bolivian Security Exchange, commonly known as Bolsa Boliviana de Valores. These traded securities encompass a diverse range of assets, including instruments of varied prices and fixed-income options like corporate bonds and fixed-term deposits. With a comprehensive package comprising four distinct functions, users can effortlessly retrieve and analyze data in various formats. From listings to detailed statistical analysis, these functions enable users to stay informed and gain valuable insights into the dynamic Bolivian financial market. The data source for this package is the official website of the Bolivian Security Exchange (www.bbv.com.bo). To get started, simply install the bolsec package from CRAN and load it into your R environment.
+```{r}
+library(bolsec)
+```
+#### Other Libraries:
+```{r}
+library(dplyr)
+library(rvest)
+library(formattable)
+```
+
+## Function 1: import_data
+```{r}
+x <- import_data()
+```
+
+By calling this primary function without requiring any arguments, users can obtain the data frame containing securities with the highest daily price variations traded in the Bolivian Securities Market. For example, the function can be assigned to a variable, such as "x", to facilitate the application of the three additional functions for data snapshotting and other data manipulation purposes.   
+
+## Function 2: get_graph
+```{r}
+get_graph(x)
+```
+By using the get_graph function with a defined variable (e.g., x), users can obtain a scatter plot that visualizes the securities with the largest daily price variations in the Bolivian Securities Market. The plot shows the relationship between the x-axis (%RATE) and the y-axis (%VAR.) using a regression line, highlighting the correlation between the data points. The plot also includes labels for each data point, indicating the ISSUER NAME and providing additional context. The correlation coefficient, displayed in red, gives an overall measure of the strength of the relationship.
+
+## Function 3: get_list
+```{r}
+get_list(x)
+```
+By using the get_list function with a defined variable (e.g., x), users can obtain a comprehensive list of the securities traded in the Bolivian Securities Market with the largest daily price variations. This list provides detailed characteristics of each security, including the TICKER SYMBOL, ISSUER NAME, PRICE, %RATE, and %VAR. The information is presented in a visually appealing image format, ensuring easy comprehension and accessibility.
+
+## Function 4: get_stats
+```{r}
+get_stats(x)
+```
+By using the get_stats function with a defined variable (e.g., x), users can obtain a descriptive statistics table that presents key statistical values for all securities with the largest daily price variations traded in the Bolivian Securities Market. The table includes essential summary statistics such as the mean, median, standard deviation, minimum, and maximum values for variables like PRICE, %RATE, and %VAR. The information is presented in a visually appealing image format, ensuring easy comprehension and accessibility.

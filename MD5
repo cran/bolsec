@@ -1,0 +1,16 @@
+3c08d3e14eeb0a0bc01a078e36c545b3 *DESCRIPTION
+cd834e4e5c53dc56d50187d4f742d9be *NAMESPACE
+3010899b7eb06dd732513ee076473f57 *R/get_graph.R
+d6c3b199556f5274355a3ad9120d7861 *R/get_list.R
+0cf10bba8e27a893c66f5a924af277e0 *R/get_stats.R
+056d71f53c9b64f658cdc45d0e20f4c6 *R/import_data.R
+51f7be84c7844c0c4f575de1f7d6e546 *build/vignette.rds
+c01e0d21be80f13e976083374fbc088d *inst/doc/intro_to_bolsec.R
+8f4e1e9c61c7a5ac29cf702c463fd400 *inst/doc/intro_to_bolsec.Rmd
+30008603316884620335aacf1e366d9c *inst/doc/intro_to_bolsec.html
+a1cef8e42061dd4b394807fcbb58883c *inst/images/logo.png
+744ca6baba6f13781c4473478d41d97c *man/get_graph.Rd
+51705b83c5cc03ef2ab50f3c41193c32 *man/get_list.Rd
+d74f6132a89936d038406ddb2ee256ff *man/get_stats.Rd
+4e5e23a222c974f15c3b99e20f83b378 *man/import_data.Rd
+8f4e1e9c61c7a5ac29cf702c463fd400 *vignettes/intro_to_bolsec.Rmd

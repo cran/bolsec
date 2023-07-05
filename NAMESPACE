@@ -1,0 +1,13 @@
+exportPattern("^[[:alpha:]]+")
+importFrom("graphics", "abline", "text")
+importFrom("stats", "cor", "lm", "median", "sd", "setNames", "complete.cases")
+importFrom("dplyr", "%>%")
+importFrom("rvest", "read_html", "html_nodes", "html_node", "html_text")
+importFrom("formattable", "formattable")
+importFrom("utils", "View")
+
+
+
+
+
+
