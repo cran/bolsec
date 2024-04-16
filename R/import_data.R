@@ -96,4 +96,3 @@ import_data <- function(verbose = TRUE) {
 
   return(result)
 }
-
